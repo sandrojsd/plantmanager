@@ -1,12 +1,13 @@
 import React from 'react';
 import { StyleSheet, Text,TouchableOpacity, TouchableOpacityProps } from 'react-native';
 import colors from '../styles/colors';
+import fonts from '../styles/fonts';
 
 interface ButtonProps extends TouchableOpacityProps {
   title: string;
 }
 
-export function Button({title, ...rest}: ButtonProps) {
+export default function Button({title, ...rest}: ButtonProps) {
   return (
     <TouchableOpacity style={styles.button} {...rest}>
         <Text style={styles.textbutton}> {title} </Text>
@@ -19,17 +20,13 @@ const styles = StyleSheet.create({
     backgroundColor: colors.green,
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
-    marginTop: 10,
-    marginBottom: 10,
-    height: 56,
-    width: 56,
+    borderRadius: 16,
+    height:56,
   },
 
   textbutton: {
-    fontSize: 18,
-    fontWeight: 'bold',
-    textAlign: 'center',
+    fontSize: 16,
     color: colors.white,
+    fontFamily: fonts.heading
   }
 });
