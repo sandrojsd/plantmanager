@@ -5,7 +5,6 @@
   ],
 
   "plants_environments": [
-    {"key": "balcony", "title": "Sacada"},
     {"key": "living_room", "title": "Sala"},
     {"key": "bedroom", "title": "Quarto"},
     {"key": "kitchen", "title": "Cozinha"},

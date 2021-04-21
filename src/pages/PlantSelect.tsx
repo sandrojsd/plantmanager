@@ -132,7 +132,7 @@ export default function PlantSelect() {
           showsVerticalScrollIndicator={false}
            data={filteredPlants}
            renderItem={({item}) => (
-             <PlantCardPrimary data={item}/>
+             <PlantCardPrimary key={item.id} data={item}/>
            )} 
            onEndReachedThreshold={0.1}
            onEndReached={({ distanceFromEnd }) => 
